@@ -14,6 +14,7 @@ def resolve_hostname(hostname):
         sys.exit(1)
 
 
+
 def traceroute(destination):
     command = ['tracert', '-w', '100', destination]
     trace = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, encoding='cp866')
